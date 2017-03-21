@@ -84,7 +84,7 @@ module.exports = {
 
     interceptors.requestInterceptor.yieldsAsync();
     interceptors.responseInterceptor.yieldsAsync();
-    syncStorage.readDatasetClient.yieldsAsync();
+    syncStorage.readDatasetClient.yieldsAsync(null, {globalHash: globalHash});
     syncStorage.upsertDatasetClient.yieldsAsync(null, {globalHash: globalHash});
     syncStorage.listUpdates.yieldsAsync(null, updates);
     ackQueue.addMany.yieldsAsync();
@@ -93,7 +93,6 @@ module.exports = {
       assert.ok(!err);
       assert.ok(interceptors.requestInterceptor.calledOnce);
       assert.ok(interceptors.requestInterceptor.calledWith(DATASETID, params));
-      assert.ok(syncStorage.upsertDatasetClient.calledOnce);
 
       assert.ok(ackQueue.addMany.calledOnce);
       var ackItems = ackQueue.addMany.args[0][0];
