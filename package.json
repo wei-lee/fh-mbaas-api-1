@@ -11,7 +11,7 @@
     "fh-component-metrics": "feedhenry/fh-component-metrics#FH-3140-add-redis",
     "fh-db": "1.2.5",
     "fh-mbaas-client": "0.15.0",
-    "fh-mbaas-express": "feedhenry/fh-mbaas-express#FH-3140-add-sync-stats",
+    "fh-mbaas-express": "wei-lee/fh-mbaas-express#FH-3140-add-sync-stats",
     "fh-security": "0.2.0",
     "fh-statsc": "0.3.0",
     "lodash-contrib": "^393.0.1",
