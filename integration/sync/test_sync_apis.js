@@ -8,6 +8,7 @@ var storageModule = require('../../lib/sync/storage');
 var _ = require('underscore');
 
 var mongoDBUrl = 'mongodb://127.0.0.1:27017/test_sync_api';
+var redisUrl = 'redis://127.0.0.1:6379';
 var DATASETID = 'syncIntegrationTest';
 var TESTCUID = 'syncIntegrationTestCuid';
 
@@ -22,7 +23,7 @@ module.exports = {
       sync.api.setLogLevel(DATASETID, {logLevel: 'debug'});
       sync.api.setLogLevel(syncUtil.SYNC_LOGGER, {logLevel: 'debug'});
       async.series([
-        async.apply(sync.api.connect, mongoDBUrl, null, null),
+        async.apply(sync.api.connect, mongoDBUrl, null, redisUrl),
         async.apply(sync.api.init, DATASETID, {syncFrequency: 1}),
         function resetdb(callback) {
           helper.resetDb(mongoDBUrl, DATASETID, function(err, db){
