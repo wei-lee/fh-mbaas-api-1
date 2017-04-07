@@ -1,5 +1,5 @@
 {
-  "name": "fh-mbaas-api",
+  "name": "fh-mbaas-api-metrics",
   "version": "7.0.0-0",
   "description": "FeedHenry MBAAS Cloud APIs",
   "main": "lib/api.js",
@@ -13,7 +13,7 @@
     "fh-component-metrics": "2.6.0",
     "fh-db": "1.2.5",
     "fh-mbaas-client": "0.15.0",
-    "fh-mbaas-express": "5.7.0",
+    "fh-mbaas-express": "wei-lee/fh-mbaas-express#test-perf",
     "fh-security": "0.2.0",
     "fh-statsc": "0.3.0",
     "lodash-contrib": "^393.0.1",
