@@ -1,6 +1,6 @@
 {
   "name": "fh-mbaas-api",
-  "version": "7.0.0-0",
+  "version": "7.0.0",
   "dependencies": {
     "async": {
       "version": "2.1.5",
@@ -55,8 +55,8 @@
     },
     "fh-component-metrics": {
       "version": "2.6.0",
-      "from": "fh-component-metrics@2.6.0",
-      "resolved": "https://registry.npmjs.org/fh-component-metrics/-/fh-component-metrics-2.6.0.tgz",
+      "from": "feedhenry/fh-component-metrics#debug-memory-usage",
+      "resolved": "git://github.com/feedhenry/fh-component-metrics.git#fcb772cab842f6655263c566539a0e06a3fe4e7f",
       "dependencies": {
         "lodash": {
           "version": "4.17.4",
@@ -2405,10 +2405,10 @@
             }
           }
         },
-        "jsprim": {
-          "version": "1.4.0",
-          "from": "https://registry.npmjs.org/jsprim/-/jsprim-1.4.0.tgz",
-          "resolved": "https://registry.npmjs.org/jsprim/-/jsprim-1.4.0.tgz",
+        "getpass": {
+          "version": "0.1.6",
+          "from": "https://registry.npmjs.org/getpass/-/getpass-0.1.6.tgz",
+          "resolved": "https://registry.npmjs.org/getpass/-/getpass-0.1.6.tgz",
           "dependencies": {
             "assert-plus": {
               "version": "1.0.0",
@@ -2417,10 +2417,10 @@
             }
           }
         },
-        "getpass": {
-          "version": "0.1.6",
-          "from": "https://registry.npmjs.org/getpass/-/getpass-0.1.6.tgz",
-          "resolved": "https://registry.npmjs.org/getpass/-/getpass-0.1.6.tgz",
+        "jsprim": {
+          "version": "1.4.0",
+          "from": "https://registry.npmjs.org/jsprim/-/jsprim-1.4.0.tgz",
+          "resolved": "https://registry.npmjs.org/jsprim/-/jsprim-1.4.0.tgz",
           "dependencies": {
             "assert-plus": {
               "version": "1.0.0",
